@@ -1,0 +1,18 @@
+server:
+  port: 7501
+spring:
+  application:
+    name: gulimall_ware
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.220.132:3306/gulimall_wms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: ums_
